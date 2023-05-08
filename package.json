@@ -1,0 +1,23 @@
+{
+  "name": "logo_maker",
+  "version": "1.0.0",
+  "description": "Creates a simple logo using user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Francisjung/Logo_Maker.git"
+  },
+  "author": "Francis Jung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Francisjung/Logo_Maker/issues"
+  },
+  "homepage": "https://github.com/Francisjung/Logo_Maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.5.0"
+  }
+}
