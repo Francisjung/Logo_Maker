@@ -1,7 +1,6 @@
 class Shape{
-    constructor(color, text){
+    constructor(color){
         this.color = color;
-        this.text = text;
 
     }
 }
