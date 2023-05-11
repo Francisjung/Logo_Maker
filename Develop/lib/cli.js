@@ -3,7 +3,7 @@ Author: Francis Jung
 Date: 5/10/2023
 */
 
-//Uses require statements to import our other classes
+//Uses require statements to import our other classes.
 const inquirer = require('inquirer');
 const fs = require('fs');
 const logo = require('./logo');
