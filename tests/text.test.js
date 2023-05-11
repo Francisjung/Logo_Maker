@@ -1,3 +1,7 @@
+/*
+Author: Francis Jung
+Date: 5/10/2023
+*/
 const text = require('../Develop/lib/text');
 
 describe("Text", () =>{

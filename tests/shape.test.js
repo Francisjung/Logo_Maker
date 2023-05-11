@@ -1,3 +1,7 @@
+/*
+Author: Francis Jung
+Date: 5/10/2023
+*/
 const {Triangle, Circle, Rectangle} = require('../Develop/lib/shape');
 
 describe("Triangle", () =>{

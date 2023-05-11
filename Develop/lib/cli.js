@@ -1,3 +1,9 @@
+/*
+Author: Francis Jung
+Date: 5/10/2023
+*/
+
+//Uses require statements to import our other classes
 const inquirer = require('inquirer');
 const fs = require('fs');
 const logo = require('./logo');
@@ -7,6 +13,7 @@ class CLI {
     constructor(){
         
     }
+    //Main method of the class, uses the inquirer package to read user input then passes it to another function in .then
     run(){
         return inquirer.prompt([
             {
@@ -31,7 +38,7 @@ class CLI {
                 message: 'Please enter the name or hexadecimal code of the color you would like your shape to be: '
             }
         ]).then(({shapeType, shapeColor, textContent, textColor}) =>{
-
+            //Creates a new Logo, Shape, and Text object, then passes the inquirer data into their constructors.
             let newLogo = new logo();
             let shape;
             switch(shapeType){
@@ -49,6 +56,7 @@ class CLI {
             }
             console.log(shape);
             let lettering;
+            //Checks if the textContent length is less than 4. If it is the Logo object is built, if not an error is thrown.
             if(textContent.length<4){
             lettering = new text(textContent, textColor);
 
