@@ -27,7 +27,7 @@ class CLI {
                 name: 'shapeColor',
                 message: 'Please enter the name or hexadecimal code of the color you would like your shape to be: '
             }
-        ]).then((shapeType, shapeColor, text, textColor) =>{
+        ]).then((shapeType, shapeColor, textContent, textColor) =>{
             let shape;
             switch(shapeType){
                 case "Rectangle":
@@ -42,6 +42,9 @@ class CLI {
                     shape = new Triangle(shapeColor);
                     break;
             }
+            let lettering;
+            lettering = new Text(textContent, textColor);
+            
         });
     }
 }
