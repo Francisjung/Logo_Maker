@@ -18,7 +18,7 @@ describe("Rectangle", () =>{
 
 describe("Circle", () =>{
     test("Will output a .svg file that describes a circle", () =>{
-        const rectangle = new Circle("Circle", "green");
+        const circle = new Circle("Circle", "green");
         const out = `<circle cx="150" cy="100" r="80" fill="green" />`;
         expect(out).toEqual(circle.render());
     });

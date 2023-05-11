@@ -12,7 +12,7 @@ class Rectangle extends Shape{
         super(shapeType, shapeColor);
     }
     render() {
-        return `<rect width="300" height="200" style="fill:${this.shapeColor};stroke-width:0;stroke:rgb(0,0,0)" />`;
+        return `<rect width="300" height="200" style="fill:"${this.shapeColor}";stroke-width:0;stroke:rgb(0,0,0)" />`;
     }
 }
 class Circle extends Shape{
@@ -28,7 +28,7 @@ class Triangle extends Shape{
         super(shapeType, shapeColor);
     }
     render() {
-        return `<polygon points="0,200 300,200 150,0" style="fill:${this.shapeColor};stroke:purple;stroke-width:0" />`;
+        return `<polygon points="0,200 300,200 150,0" style="fill:"${this.shapeColor}";stroke:purple;stroke-width:0" />`;
     }
 }
 
