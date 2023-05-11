@@ -3,15 +3,14 @@ const Text = require('./text');
 
 class Logo{
     constructor(){
-        let shape;
-        let text;
+        let shape ='';
+        let text ='';
     }
     render(){
-        return `<svg height="200" width="300">
-        ${this.shape.render()}
-        ${this.text.render()}
-        Sorry, there was a problem creating your logo.  
-      </svg> `
+        return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        ${this.shape}
+        ${this.text}
+      </svg> `;
     }
     setShape(shape){
         this.shape = shape;

@@ -1,6 +1,6 @@
 class Text{
     constructor(textContent, textColor){
-        this.textContent = textContent;
+        this.textContent = textContent.toUpperCase();
         this.textColor = textColor;
     }
     render(){

@@ -20,7 +20,7 @@ class Circle extends Shape{
         super(shapeType, shapeColor);
     }
     render() {
-        return `<circle cx="150" cy="100" r="100" stroke="black" stroke-width="0" fill="${this.shapeColor}" />`;
+        return `<circle cx="150" cy="100" r="80" fill="${this.shapeColor}" />`;
     }
 }
 class Triangle extends Shape{
