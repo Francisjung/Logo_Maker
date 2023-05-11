@@ -1,5 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const logo = require('./logo');
+const shape = require('./shape');
+const text = require('./text');
 class CLI {
     constructor(){
         
@@ -44,7 +47,8 @@ class CLI {
             }
             let lettering;
             lettering = new Text(textContent, textColor);
-            
+
+
         });
     }
 }
