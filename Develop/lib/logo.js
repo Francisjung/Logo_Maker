@@ -3,8 +3,8 @@ const Text = require('./text');
 
 class Logo{
     constructor(){
-        shape;
-        text;
+        let shape;
+        let text;
     }
     render(){
         return `<svg height="200" width="300">
